@@ -24,7 +24,7 @@ default values
 
 # VERBOSE RUN & DEBUG
 
-verbose=-v upload2cloud-yandex
+    verbose=-v upload2cloud-yandex
 
 # CONFIG && config search PATH
 

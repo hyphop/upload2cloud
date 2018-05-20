@@ -24,7 +24,7 @@ default values
 
 # VERBOSE RUN & DEBUG
 
-verbose=-v upload2cloud
+    verbose=-v upload2cloud
 
 # CONFIG && config search PATH
 
