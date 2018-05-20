@@ -76,8 +76,7 @@ or
 
 https://github.com/hyphop/$REP - source page 
 
-    wget $SRC_BASE/$PROG
-    chmod 0777 $PROG
+    wget $SRC_BASE/$PROG && chmod 0777 $PROG
 
 # REQUIRED
 
