@@ -11,7 +11,7 @@ DIR="$DIR/"
 
 [ "$DST" ] || {
     case $PROG in
-	yan*|*yan)
+	yandex*|*yandex)
 	DST="https://webdav.yandex.com"
 	;;
 	4share*|*4share)
@@ -42,14 +42,17 @@ its simple webdav console client suitable for any webdav storage
 
 any vars defines as ENV variables
 
-    [ user, password, user_password, DST, CURL, DIR ] $PROG
+    [ user, password, user_password, DST, CURL, DIR, verbose ] $PROG
 
 default values
 
 + ENV{DST}: \"$DST\" - webdav dst url - automate by name
 + ENV{CURL}: \"$CURL\" - curl binary - autodetect
 + ENV{DIR}: \"$DIR\" - remote dir
-...
+
+# VERBOSE RUN & DEBUG
+
+verbose=-v $PROG
 
 # CONFIG && config search PATH
 
