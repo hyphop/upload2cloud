@@ -63,7 +63,7 @@ configure user:password credential there
 
 # CONFIG EXAMPLES
 
-    -H \"Authorization: Basic YWNjasdasdMHVudC5mcmt3Z2Z2tsYWJvcWs=\"
+    -H \"Authorization: Basic d2h5LWFyZTp5b3UtZG9pbmc=\"
 or
     -u user:password
 
