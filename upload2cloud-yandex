@@ -10,25 +10,41 @@ SRC_BASE="https://raw.githubusercontent.com/hyphop/$REP/master"
 DIR="$DIR/"
 
 EXTRA="( based on [upload2cloud](https://github.com/hyphop/upload2cloud/) )"
+[ "$CURL" ] || CURL="curl"
+
+COPTS="$COPTS -# \
+    $verbose -o- \
+    -g -i \
+    -L \
+    -K-
+"
 
 [ "$DST" ] || {
     case $PROG in
+	## disk.yandex.com
 	yandex*|*yandex)
 	DST="https://webdav.yandex.com"
 	;;
+	## box.com
 	*box.com)
 	DST=https://dav.box.com/dav
 	;;
+	## 4shared.com
 	4shared*|*4shared)
-	DST=https://webdav.4shared.com/
+	DST=https://webdav.4shared.com
+	;;
+	## cloudme.com
+	## https://www.cloudme.com/en/webdav
+
+	*cloudme)
+	DST=https://webdav.cloudme.com
 	;;
 	*)
 	DST="https://my.webdav.server"
-	
+	;;
     esac
 }
 
-[ "$CURL" ] || CURL="curl"
 
 about(){
 
@@ -228,12 +244,9 @@ echo "[i] bin $CURL" >&2
 anydir "$@" && {
 echo "[i] UPLOAD DIRS" >&2
 
-readdir "$@" | $CURL -# \
-    $verbose -o- \
-    -g -i \
-    -L \
-    -X MKCOL \
-    -K- | while read L ; do
+readdir "$@" | $CURL $COPTS \
+    -i \
+    -X MKCOL |  while read L ; do
     #echo "> $L" >&2
     # ok
     #HTTP/1.1 405 Method Not Allowed
@@ -260,12 +273,9 @@ anyfiles "$@" && {
 
 echo "[i] UPLOAD FILES" >&2
 
-readfiles "$@" | $CURL -# \
-    $verbose -o- \
-    -g -f \
-    -L \
-    -X PUT \
-    -K- >/dev/null
+readfiles "$@" | $CURL $COPTS \
+    -f \
+    -X PUT >/dev/null
 
 }
 
