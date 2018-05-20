@@ -33,16 +33,18 @@ default values
 its simple curl config format
 configure user:password credential there 
 
-# CONFIG EXAMPLES
+# USER CONFIG EXAMPLES
 
     -H "Authorization: Basic d2h5LWFyZTp5b3UtZG9pbmc="
 or
 
     -u user:password
 
-# SOURCE & INSTALL
+# SOURCE
 
-https://github.com/hyphop/upload2cloud - source page 
+https://github.com/hyphop/upload2cloud
+
+# INSTALL
 
     wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud \
     && chmod 0777 upload2cloud
