@@ -62,8 +62,8 @@ default values
 
 ./$PROG.conf => .$PROG.conf => ~/.$PROG.conf
 
-this file just simple curl config ( more details there "man curl" )
-you can configure user:password credential there 
+this file just simple curl config ( more details there *man curl* )
+you can configure *user:password* credential there 
 
 # USER CONFIG EXAMPLES
 
