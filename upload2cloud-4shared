@@ -16,6 +16,9 @@ EXTRA="( based on [upload2cloud](https://github.com/hyphop/upload2cloud/) )"
 	yandex*|*yandex)
 	DST="https://webdav.yandex.com"
 	;;
+	*box.com)
+	DST=https://dav.box.com/dav
+	;;
 	4shared*|*4shared)
 	DST=https://webdav.4shared.com/
 	;;
