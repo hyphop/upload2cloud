@@ -30,7 +30,7 @@ do
 echo "[i] update $d / $t" >&2
 [ -e $d/$t ] || \
     ln $d/upload2cloud $d/$t
-$d/$t --help $d/$t.help.md
+$d/$t --help > $d/$t.help.md
 
 done
 
