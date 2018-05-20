@@ -30,7 +30,7 @@ default values
 
 ./upload2cloud-4shared.conf => .upload2cloud-4shared.conf => ~/.upload2cloud-4shared.conf
 
-this file just simple curl config ( more details there *man curl* )
+this file just simple **curl config** ( more details there *man curl* )
 you can configure *user:password* credential there 
 
 # USER CONFIG EXAMPLES
