@@ -1,5 +1,4 @@
-<img alt=upload2cloud src="img/up2cloud.png"/> <a href="https://travis-ci.com/hyphop/upload2cloud">
-<img alt="upload2cloud check building status" src="https://api.travis-ci.com/hyphop/upload2cloud?branch=master"/></a>
+<img alt=upload2cloud src="img/up2cloud.png"/> [![Build Status](https://travis-ci.com/hyphop/upload2cloud.svg?branch=master)](https://travis-ci.com/hyphop/upload2cloud)
 
 # upload2cloud
 
