@@ -33,7 +33,7 @@ just one line get && install
 
     wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/dl/upload2cloud && chmod 0777 upload2*
 
-## Yandex Drive
+## Yandex Disk
 
     wget -O upload2cloud-yandex https://raw.githubusercontent.com/hyphop/upload2cloud/master/dl/upload2cloud && chmod 0777 upload2*
 
