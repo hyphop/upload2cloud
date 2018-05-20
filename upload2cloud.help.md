@@ -14,14 +14,17 @@ its simple webdav console client suitable for any webdav storage
 
 any vars defines as ENV variables
 
-    [ user, password, user_password, DST, CURL, DIR ] upload2cloud
+    [ user, password, user_password, DST, CURL, DIR, verbose ] upload2cloud
 
 default values
 
 + ENV{DST}: "https://my.webdav.server" - webdav dst url - automate by name
 + ENV{CURL}: "curl" - curl binary - autodetect
 + ENV{DIR}: "/" - remote dir
-...
+
+# VERBOSE RUN & DEBUG
+
+verbose=-v upload2cloud
 
 # CONFIG && config search PATH
 
