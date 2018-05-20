@@ -58,12 +58,12 @@ default values
 
     verbose=-v $PROG
 
-# CONFIG && config search PATH
+# CONFIG SEARCH PATHS
 
 ./$PROG.conf => .$PROG.conf => ~/.$PROG.conf
 
-its simple curl config format
-configure user:password credential there 
+this file just simple curl config `man curl`,
+you can configure user:password credential there 
 
 # USER CONFIG EXAMPLES
 
