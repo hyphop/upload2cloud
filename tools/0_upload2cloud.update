@@ -14,17 +14,23 @@ case "$PWD" in
 esac
 
 
+d="."
+d="dl"
+
 echo "[i] UPDATE" >&2
+
 for t in			\
 	upload2cloud		\
 	upload2cloud-yandex	\
 	upload2cloud-4shared	\
+	upload2cloud-cloudme	\
 
 do
 
-echo "[i] update $t" >&2
-ln upload2cloud $t
-./$t --help > $t.help.md
+echo "[i] update $d / $t" >&2
+[ -e $d/$t ] || \
+    ln $d/upload2cloud $d/$t
+$d/$t --help $d/$t.help.md
 
 done
 

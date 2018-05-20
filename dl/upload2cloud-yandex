@@ -27,24 +27,23 @@ COPTS="$COPTS -# \
 	;;
 	## box.com
 	*box.com)
-	DST=https://dav.box.com/dav
+	DST="https://dav.box.com/dav"
 	;;
 	## 4shared.com
 	4shared*|*4shared)
-	DST=https://webdav.4shared.com
+	DST="https://webdav.4shared.com"
 	;;
 	## cloudme.com
 	## https://www.cloudme.com/en/webdav
 
 	*cloudme)
-	DST=https://webdav.cloudme.com
+	DST="https://webdav.cloudme.com"
 	;;
 	*)
 	DST="https://my.webdav.server"
 	;;
     esac
 }
-
 
 about(){
 
@@ -53,7 +52,7 @@ echo "
 # $PROG $EXTRA
 
 easy way upload files to cloud storage from command line / *nix shell.
-`$PROG` is simple webdav linux console client suitable for any webdav storage
+**$PROG** is simple webdav linux console client suitable for any webdav storage
 
 # USAGE 
 
@@ -73,7 +72,7 @@ default values
 
 # VERBOSE RUN & DEBUG
 
-    verbose=-v $PROG
+    verbose=1 $PROG
 
 # CONFIG SEARCH PATHS
 
@@ -114,15 +113,31 @@ https://github.com/hyphop/$REP
 #verbose="-i"
 
 
+[ "$verbose" ] && {
+    case "$verbose" in
+	0|no|false|NO|FALSE)
+	;;
+	i)
+	COPTS="$COPTS -i"
+	;;
+	*)
+	COPTS="$COPTS -v"
+	;;
+    esac
+}
+
+
 [ "$1" ] || {
     about
     exit 1
 }
 
+
 #LIST=
 #DIRS=
 #FILES=
 
+exit 0
 
 for a in "$@" ; do
 case $a in

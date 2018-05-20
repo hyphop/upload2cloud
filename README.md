@@ -17,7 +17,32 @@ PROVIDER | FREE | SERVER |Checked
 [CloudMe](https://cloudme.com)	| 3 GB	| webdav.cloudme.com/ | dont work
 
 you can check another storage providers , 
-make some customization and fork (upload2cloud)(https://github.com/hyphop/upload2cloud)
+make some customization and fork [upload2cloud](https://github.com/hyphop/upload2cloud)
+
+# Get Source 
+
+    git clone https://github.com/hyphop/upload2cloud
+
+
+# Get && Install
+
+just one line get && install
+
+    wget https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud
+
+or get and save as custom client
+
++ yandex 
+`wget -O upload2cloud-yandex https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud` 
++ 4shared
+`wget -O upload2cloud-4shared https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud` 
++ box 
+`wget -O upload2cloud-box.com https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud` 
+
+and make executable it
+
+`chmod 0777 upload2*`
+
 
 
 
