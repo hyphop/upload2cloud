@@ -28,10 +28,11 @@ default values
 
 # CONFIG SEARCH PATHS
 
-./upload2cloud.conf => .upload2cloud.conf => ~/.upload2cloud.conf
-
 this file just simple **curl config** ( more details there *man curl* )
 you can configure *user:password* credential there 
+
+./upload2cloud.conf => .upload2cloud.conf => ~/.upload2cloud.conf
+
 
 # USER CONFIG EXAMPLES
 

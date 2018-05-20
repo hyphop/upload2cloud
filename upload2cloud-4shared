@@ -60,10 +60,11 @@ default values
 
 # CONFIG SEARCH PATHS
 
-./$PROG.conf => .$PROG.conf => ~/.$PROG.conf
-
 this file just simple **curl config** ( more details there *man curl* )
 you can configure *user:password* credential there 
+
+./$PROG.conf => .$PROG.conf => ~/.$PROG.conf
+
 
 # USER CONFIG EXAMPLES
 
