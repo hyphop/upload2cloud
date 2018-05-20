@@ -62,7 +62,7 @@ easy way upload files to cloud storage from command line / *nix shell.
 
 any vars defines as ENV variables
 
-    [ user, password, user_password, DST, CURL, DIR, verbose ] $PROG
+    [ user, password, user_password, DST, CURL, COPTS, DIR, verbose ] $PROG
 
 default values
 
@@ -109,10 +109,6 @@ https://github.com/hyphop/$REP
 
 }
 
-#verbose="-v"
-#verbose="-i"
-
-
 [ "$verbose" ] && {
     case "$verbose" in
 	0|no|false|NO|FALSE)
@@ -132,12 +128,6 @@ https://github.com/hyphop/$REP
     exit 1
 }
 
-
-#LIST=
-#DIRS=
-#FILES=
-
-exit 0
 
 for a in "$@" ; do
 case $a in

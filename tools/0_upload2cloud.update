@@ -28,7 +28,7 @@ for t in			\
 do
 
 echo "[i] update $d / $t" >&2
-[ -e $d/$t ] || \
+#[ -e $d/$t ] || \
     ln -f $d/upload2cloud $d/$t
 $d/$t --help > $d/$t.help.md
 
