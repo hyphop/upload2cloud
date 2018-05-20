@@ -9,7 +9,7 @@ SRC_BASE="https://raw.githubusercontent.com/hyphop/$REP/master"
 [ "$DIR" ] || DIR=""
 DIR="$DIR/"
 
-EXTRA="based on [upload2cloud](https://github.com/hyphop/upload2cloud/)"
+EXTRA="( based on [upload2cloud](https://github.com/hyphop/upload2cloud/) )"
 
 [ "$DST" ] || {
     case $PROG in

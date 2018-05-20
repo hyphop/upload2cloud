@@ -1,5 +1,5 @@
 
-# upload2cloud based on [upload2cloud](https://github.com/hyphop/upload2cloud/)
+# upload2cloud ( based on [upload2cloud](https://github.com/hyphop/upload2cloud/) )
 
 easy way upload files to cloud storage
 from command line / shell, )
