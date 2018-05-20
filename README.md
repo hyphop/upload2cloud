@@ -31,19 +31,19 @@ make some customization and fork [upload2cloud](https://github.com/hyphop/upload
 
 just one line get && install
 
-    wget https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
+    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/dl/upload2cloud && chmod 0777 upload2*
 
 ## Yandex Drive
 
-    wget -O upload2cloud-yandex https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
+    wget -O upload2cloud-yandex https://raw.githubusercontent.com/hyphop/upload2cloud/master/dl/upload2cloud && chmod 0777 upload2*
 
 ## 4shared.com
 
-    wget -O upload2cloud-4shared https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
+    wget -O upload2cloud-4shared https://raw.githubusercontent.com/hyphop/upload2cloud/master/dl/upload2cloud && chmod 0777 upload2*
 
 ## Box.com
 
-    wget -O upload2cloud-box.com https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
+    wget -O upload2cloud-box.com https://raw.githubusercontent.com/hyphop/upload2cloud/master/dl/upload2cloud && chmod 0777 upload2*
 
 # Flexible custom install
 
