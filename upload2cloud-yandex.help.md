@@ -44,7 +44,8 @@ or
 
 https://github.com/hyphop/upload2cloud - source page 
 
-    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud-yandex     && chmod 0777 upload2cloud-yandex
+    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud-yandex \
+    && chmod 0777 upload2cloud-yandex
 
 # REQUIRED
 
