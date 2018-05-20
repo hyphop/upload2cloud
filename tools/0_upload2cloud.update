@@ -18,6 +18,7 @@ echo "[i] UPDATE" >&2
 for t in			\
 	upload2cloud		\
 	upload2cloud-yandex	\
+	upload2cloud-4shared	\
 
 do
 
