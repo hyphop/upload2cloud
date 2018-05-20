@@ -78,8 +78,8 @@ https://github.com/hyphop/$REP
 
 # INSTALL
 
-    wget $SRC_BASE/$PROG \\
-    && chmod 0777 $PROG
+    wget $SRC_BASE/$PROG
+    chmod 0777 $PROG
 
 # REQUIRED
 

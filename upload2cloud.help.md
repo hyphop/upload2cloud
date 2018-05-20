@@ -46,8 +46,8 @@ https://github.com/hyphop/upload2cloud
 
 # INSTALL
 
-    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud \
-    && chmod 0777 upload2cloud
+    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud
+    chmod 0777 upload2cloud
 
 # REQUIRED
 

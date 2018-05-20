@@ -23,7 +23,7 @@ for t in			\
 do
 
 echo "[i] update $t" >&2
-
+ln upload2cloud $t
 ./$t --help > $t.help.md
 
 done
