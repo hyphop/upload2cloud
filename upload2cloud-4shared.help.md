@@ -18,7 +18,7 @@ any vars defines as ENV variables
 
 default values
 
-+ ENV{DST}: "https://my.webdav.server" - webdav dst url - automate by name
++ ENV{DST}: "https://webdav.4shared.com/" - webdav dst url - automate by name
 + ENV{CURL}: "curl" - curl binary - autodetect
 + ENV{DIR}: "/" - remote dir
 
@@ -38,7 +38,7 @@ you can configure *user:password* credential there
     -H "Authorization: Basic d2h5LWFyZTp5b3UtZG9pbmc="
 or
 
-    -u user:password
+    -u "user:password"
 
 # SOURCE
 

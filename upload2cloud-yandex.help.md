@@ -38,7 +38,7 @@ you can configure *user:password* credential there
     -H "Authorization: Basic d2h5LWFyZTp5b3UtZG9pbmc="
 or
 
-    -u user:password
+    -u "user:password"
 
 # SOURCE
 

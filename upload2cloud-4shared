@@ -16,7 +16,7 @@ EXTRA="( based on [upload2cloud](https://github.com/hyphop/upload2cloud/) )"
 	yandex*|*yandex)
 	DST="https://webdav.yandex.com"
 	;;
-	4share*|*4share)
+	4shared*|*4shared)
 	DST=https://webdav.4shared.com/
 	;;
 	*)
@@ -70,7 +70,7 @@ you can configure *user:password* credential there
     -H \"Authorization: Basic d2h5LWFyZTp5b3UtZG9pbmc=\"
 or
 
-    -u user:password
+    -u \"user:password\"
 
 # SOURCE
 
