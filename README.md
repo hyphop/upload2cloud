@@ -1,5 +1,8 @@
 <img alt=upload2cloud src="img/up2cloud.png"/>
 
+<a href="https://travis-ci.com/hyphop/upload2cloud">
+<img alt="upload2cloud check building status" src="https://api.travis-ci.com/hyphop/upload2cloud?branch=master"/></a>
+
 # upload2cloud
 
 + free opensource cloud disk uploader.
@@ -56,12 +59,7 @@ same downloaded `upload2cloud`, and just make additionalt symlinks to `upload2cl
     ...
     ln -s upload2cloud upload2cloud-YOUR_SERVICE_NAME
 
+# Author 
 
-
-
-
-
-
-
-
+    ## hyphop ##
 

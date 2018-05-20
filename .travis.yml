@@ -1,0 +1,3 @@
+language: c
+script: ./tools/travis_check_build
+

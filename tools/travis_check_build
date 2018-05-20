@@ -1,0 +1,7 @@
+#!/bin/sh
+
+## hyphop ##
+
+echo "[i] OK"
+
+exit 0
