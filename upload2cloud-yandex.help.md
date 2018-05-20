@@ -1,8 +1,8 @@
 
-# upload2cloud-yandex
+# upload2cloud-yandex based on [upload2cloud](https://github.com/hyphop/upload2cloud/
 
 easy way upload files to cloud storage
-from command line / shell
+from command line / shell, )
 
 its simple webdav console client suitable for any webdav storage
 
@@ -37,6 +37,7 @@ configure user:password credential there
 
     -H "Authorization: Basic d2h5LWFyZTp5b3UtZG9pbmc="
 or
+
     -u user:password
 
 # SOURCE & INSTALL

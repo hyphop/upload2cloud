@@ -9,6 +9,8 @@ SRC_BASE="https://raw.githubusercontent.com/hyphop/$REP/master"
 [ "$DIR" ] || DIR=""
 DIR="$DIR/"
 
+EXTRA="based on [upload2cloud](https://github.com/hyphop/upload2cloud/"
+
 [ "$DST" ] || {
     case $PROG in
 	yandex*|*yandex)
@@ -19,6 +21,7 @@ DIR="$DIR/"
 	;;
 	*)
 	DST="https://my.webdav.server"
+	
     esac
 }
 
@@ -26,11 +29,12 @@ DIR="$DIR/"
 
 about(){
 
+
 echo "
-# $PROG
+# $PROG $EXTRA
 
 easy way upload files to cloud storage
-from command line / shell
+from command line / shell, )
 
 its simple webdav console client suitable for any webdav storage
 
@@ -65,6 +69,7 @@ configure user:password credential there
 
     -H \"Authorization: Basic d2h5LWFyZTp5b3UtZG9pbmc=\"
 or
+
     -u user:password
 
 # SOURCE & INSTALL
