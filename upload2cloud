@@ -69,7 +69,7 @@ or
 
 # SOURCE & INSTALL
 
-https://github.com/hyphop/$PROG - source page 
+https://github.com/hyphop/$REP - source page 
 
     wget $SRC_BASE/$PROG
     chmod 0777 $PROG

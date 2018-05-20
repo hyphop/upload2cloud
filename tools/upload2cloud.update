@@ -1,0 +1,19 @@
+#!/bin/sh
+
+## hyphop ##
+
+# just run as
+#	./tools/*
+
+
+echo "[i] UPDATE" >&2
+for t in			\
+	upload2cloud		\
+	upload2cloud-yandex	\
+do
+
+$t --help > $t.help.md
+
+done
+
+#./git_add_commit_push
