@@ -33,10 +33,8 @@ about(){
 echo "
 # $PROG $EXTRA
 
-easy way upload files to cloud storage
-from command line / *nix shell
-
-its simple webdav linux console client suitable for any webdav storage
+easy way upload files to cloud storage from command line / *nix shell.
+$PROG its simple webdav linux console client suitable for any webdav storage
 
 # USAGE 
 

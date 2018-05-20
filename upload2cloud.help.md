@@ -1,10 +1,8 @@
 
 # upload2cloud ( based on [upload2cloud](https://github.com/hyphop/upload2cloud/) )
 
-easy way upload files to cloud storage
-from command line / *nix shell
-
-its simple webdav linux console client suitable for any webdav storage
+easy way upload files to cloud storage from command line / *nix shell.
+upload2cloud its simple webdav linux console client suitable for any webdav storage
 
 # USAGE 
 
