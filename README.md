@@ -33,7 +33,7 @@ just one line get && install
 
     wget https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
 
-## yandex drive
+## Yandex Drive
 
     wget -O upload2cloud-yandex https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
 
@@ -41,18 +41,22 @@ just one line get && install
 
     wget -O upload2cloud-4shared https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
 
-## box.com
+## Box.com
 
     wget -O upload2cloud-box.com https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
 
 # Flexible custom install
 
+same downloaded `upload2cloud`, and just make additionalt symlinks to `upload2cloud` as below
+
     wget https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
-    # just make symlinks to upload2cloud as below
     ln -s upload2cloud upload2cloud-yandex
     ln -s upload2cloud upload2cloud-4shared
     ln -s upload2cloud upload2cloud-box.com
     ...
+    ln -s upload2cloud upload2cloud-YOUR_SERVICE_NAME
+
+
 
 
 
