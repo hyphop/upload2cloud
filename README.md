@@ -19,29 +19,43 @@ PROVIDER | FREE | SERVER |Checked
 you can check another storage providers , 
 make some customization and fork [upload2cloud](https://github.com/hyphop/upload2cloud)
 
+# Usage 
+    
+    upload2cloud [ DIRS | FILES ]
+    
 # Get Source 
 
     git clone https://github.com/hyphop/upload2cloud
-
 
 # Get && Install
 
 just one line get && install
 
-    wget https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud
+    wget https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
 
-or get and save as custom client
+## yandex drive
 
-+ yandex 
-`wget -O upload2cloud-yandex https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud` 
-+ 4shared
-`wget -O upload2cloud-4shared https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud` 
-+ box 
-`wget -O upload2cloud-box.com https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud` 
+    wget -O upload2cloud-yandex https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
 
-and make executable it
+## 4shared.com
 
-`chmod 0777 upload2*`
+    wget -O upload2cloud-4shared https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
+
+## box.com
+
+    wget -O upload2cloud-box.com https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
+
+# Flexible custom install
+
+    wget https://github.com/hyphop/upload2cloud/blob/master/dl/upload2cloud && chmod 0777 upload2*
+    # just make symlinks to upload2cloud as below
+    ln -s upload2cloud upload2cloud-yandex
+    ln -s upload2cloud upload2cloud-4shared
+    ln -s upload2cloud upload2cloud-box.com
+    ...
+
+
+
 
 
 
