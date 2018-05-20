@@ -1,8 +1,7 @@
 
 # upload2cloud-yandex ( based on [upload2cloud](https://github.com/hyphop/upload2cloud/) )
 
-easy way upload files to cloud storage from command line / *nix shell.
-upload2cloud-yandex its simple webdav linux console client suitable for any webdav storage
+easy way upload files to cloud storage from command line / *nix shell. is simple webdav linux console client suitable for any webdav storage
 
 # USAGE 
 
