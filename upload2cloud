@@ -3,7 +3,7 @@
 ## hyphop ##
 
 PROG="$(basename "$0")"
-REP="$PROG"
+REP="upload2cloud"
 SRC_BASE="https://raw.githubusercontent.com/hyphop/$REP/master"
 
 [ "$DIR" ] || DIR=""

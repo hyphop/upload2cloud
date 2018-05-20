@@ -14,14 +14,17 @@ its simple webdav console client suitable for any webdav storage
 
 any vars defines as ENV variables
 
-    [ user, password, user_password, DST, CURL, DIR ] upload2cloud-yandex
+    [ user, password, user_password, DST, CURL, DIR, verbose ] upload2cloud-yandex
 
 default values
 
 + ENV{DST}: "https://webdav.yandex.com" - webdav dst url - automate by name
 + ENV{CURL}: "curl" - curl binary - autodetect
 + ENV{DIR}: "/" - remote dir
-...
+
+# VERBOSE RUN & DEBUG
+
+verbose=-v upload2cloud-yandex
 
 # CONFIG && config search PATH
 
@@ -40,7 +43,7 @@ or
 
 https://github.com/hyphop/upload2cloud-yandex - source page 
 
-    wget https://raw.githubusercontent.com/hyphop/upload2cloud-yandex/master/upload2cloud-yandex
+    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud-yandex
     chmod 0777 upload2cloud-yandex
 
 # REQUIRED
