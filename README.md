@@ -9,7 +9,6 @@ cloud disk uploader easy way upload files to cloud storages from command line / 
 
 PROVIDER | FREE | SERVER |Checked
 --- | --- | --- | ---
-
 [yandex](disk.yandex.com)	| 10 GB	| webdav.yandex.com/ | ok
 [4shared](4shared.com)	| 10 GB	| webdav.4shared.com/ | ok
 [Box](box.com) | 10 GB	| dav.box.com/dav | ok
