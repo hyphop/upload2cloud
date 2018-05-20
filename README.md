@@ -9,6 +9,6 @@ cloud disk uploader easy way upload files to cloud storages from command line / 
 
 PROVIDER | FREE | SERVER |Checked
 --- | --- | --- | ---
-4shared.com	| 10 GB	| https://webdav.4shared.com/ | ok
-Box.com | 10 GB	| https://dav.box.com/dav | ok
-CloudMe.com	| 3 GB	| https://webdav.cloudme.com/ | ok
+[4shared](4shared.com)	| 10 GB	| webdav.4shared.com/ | ok
+[Box](box.com) | 10 GB	| dav.box.com/dav | ok
+[CloudMe](cloudme.com)	| 3 GB	| webdav.cloudme.com/ | ok
