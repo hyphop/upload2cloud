@@ -2,4 +2,6 @@
 
 ## hyphop ##
 
+echo "[i] UPDATE" >&2
+
 ./upload2cloud-yandex --help > upload2cloud-yandex.help.md
