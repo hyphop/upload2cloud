@@ -5,9 +5,9 @@
 + easy way upload files to cloud storages from command line / *nix shell, without GUI
 + is simple webdav linux console client 
 + universal & suitable for any webdav storage
-+ just one file, 4K only
++ just one file, 5K only
 + ideal for automate usage
-+ free opensource
++ [upload2cloud](https://github.com/hyphop/upload2cloud/blob/master/src/upload2cloud) is free & opensource
 
 # Checked & Tested Storage Provides
 
