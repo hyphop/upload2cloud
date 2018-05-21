@@ -4,14 +4,14 @@
 
 PROG="$(basename "$0")"
 REP="upload2cloud"
-SRC_BASE="https://raw.githubusercontent.com/hyphop/$REP/master"
+SRC_BASE="https://raw.githubusercontent.com/hyphop/$REP/master/src"
 ## https://git.io/
 SHORT_LINK=https://git.io/vpjn6
 
 [ "$DIR" ] || DIR=""
 DIR="$DIR/"
 
-EXTRA="( based on [upload2cloud](https://github.com/hyphop/upload2cloud/) )"
+EXTRA=" [upload2cloud](https://github.com/hyphop/upload2cloud/) "
 [ "$CURL" ] || CURL="curl"
 
 COPTS="$COPTS -# \
@@ -106,7 +106,7 @@ https://github.com/hyphop/$REP
 
 or
     
-    curl -kL https://git.io/vpjn6 > $PROG && chmod 0777 $PROG
+    curl -kL $SHORT_LINK > $PROG && chmod 0777 $PROG
 
 # REQUIRED
 

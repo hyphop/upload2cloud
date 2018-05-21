@@ -47,15 +47,15 @@ just make symlinks `upload2cloud-YOUR_SERVICE_NAME` to `upload2cloud` as below
 
 ## Yandex Disk
 
-    wget -O upload2cloud-yandex https://raw.githubusercontent.com/hyphop/upload2cloud/master/dl/upload2cloud && chmod 0777 upload2*
+    wget -O upload2cloud-yandex https://raw.githubusercontent.com/hyphop/upload2cloud/master/src/upload2cloud && chmod 0777 upload2*
 
 ## 4shared.com
 
-    wget -O upload2cloud-4shared https://raw.githubusercontent.com/hyphop/upload2cloud/master/dl/upload2cloud && chmod 0777 upload2*
+    wget -O upload2cloud-4shared https://raw.githubusercontent.com/hyphop/upload2cloud/master/src/upload2cloud && chmod 0777 upload2*
 
 ## Box.com
 
-    wget -O upload2cloud-box.com https://raw.githubusercontent.com/hyphop/upload2cloud/master/dl/upload2cloud && chmod 0777 upload2*
+    wget -O upload2cloud-box.com https://raw.githubusercontent.com/hyphop/upload2cloud/master/src/upload2cloud && chmod 0777 upload2*
 
 
 # Just another way to install
