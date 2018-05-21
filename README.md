@@ -3,10 +3,10 @@
 # upload2cloud - cloud disk uploader
 
 + easy way upload files to cloud storages from command line / *nix shell, without GUI
-+ is simple webdav linux console client 
++ simple webdav linux terminal client 
 + universal & suitable for any webdav storage
 + just one file, 5K only
-+ ideal for automate usage
++ ideal for automate, customize and modificate
 + [upload2cloud](https://github.com/hyphop/upload2cloud/blob/master/src/upload2cloud) is free & opensource
 
 # Checked & Tested Storage Provides
