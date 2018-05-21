@@ -45,8 +45,11 @@ https://github.com/hyphop/upload2cloud
 
 # INSTALL
 
-    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud-cloudme
-    chmod 0777 upload2cloud-cloudme
+    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud-cloudme && chmod 0777 upload2cloud-cloudme
+
+or
+    
+    curl -kL https://git.io/vpjn6 > upload2cloud-cloudme && chmod 0777 upload2cloud-cloudme
 
 # REQUIRED
 

@@ -5,6 +5,8 @@
 PROG="$(basename "$0")"
 REP="upload2cloud"
 SRC_BASE="https://raw.githubusercontent.com/hyphop/$REP/master"
+## https://git.io/
+SHORT_LINK=https://git.io/vpjn6
 
 [ "$DIR" ] || DIR=""
 DIR="$DIR/"
@@ -95,8 +97,11 @@ https://github.com/hyphop/$REP
 
 # INSTALL
 
-    wget $SRC_BASE/$PROG
-    chmod 0777 $PROG
+    wget $SRC_BASE/$PROG && chmod 0777 $PROG
+
+or
+    
+    curl -kL https://git.io/vpjn6 > $PROG && chmod 0777 $PROG
 
 # REQUIRED
 

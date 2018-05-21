@@ -45,8 +45,11 @@ https://github.com/hyphop/upload2cloud
 
 # INSTALL
 
-    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud-yandex
-    chmod 0777 upload2cloud-yandex
+    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud-yandex && chmod 0777 upload2cloud-yandex
+
+or
+    
+    curl -kL https://git.io/vpjn6 > upload2cloud-yandex && chmod 0777 upload2cloud-yandex
 
 # REQUIRED
 
