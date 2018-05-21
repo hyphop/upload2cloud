@@ -16,7 +16,7 @@ any vars defines as ENV variables
 
 default values
 
-+ ENV{DST}: "https://dav.box.com/dav" - webdav dst url - automate by name
++ ENV{DST}: "dav.box.com/dav" - webdav dst url - automate by name
 + ENV{CURL}: "curl" - curl binary - autodetect
 + ENV{DIR}: "/" - remote dir
 

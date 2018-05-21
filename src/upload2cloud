@@ -2,6 +2,7 @@
 
 ## hyphop ##
 
+
 PROG="$(basename "$0")"
 REP="upload2cloud"
 SRC_BASE="https://raw.githubusercontent.com/hyphop/$REP/master/src"
@@ -23,6 +24,10 @@ COPTS="$COPTS -# \
 
 HTTPS="https://"
 
+# CURL
+#--connect-to <HOST1:PORT1:HOST2:PORT2>
+#--resolve <host:port:address>
+
 #verbose=1 COPTS="-w @curl-format" OUTPUT="/dev/stdout"
 
 [ "$OUTPUT" ] || OUTPUT="/dev/null" ##  /dev/stdout /dev/stderr
@@ -30,24 +35,25 @@ HTTPS="https://"
     case $PROG in
 	## disk.yandex.com
 	yandex*|*yandex)
-	DST="https://webdav.yandex.com"
+	DST="webdav.yandex.com"
 	;;
 	## box.com
 	*box.com)
-	DST="https://dav.box.com/dav"
+	DST="dav.box.com/dav"
 	;;
 	## 4shared.com
 	4shared*|*4shared)
-	DST="https://webdav.4shared.com"
+	DST="webdav.4shared.com"
 	;;
 	## cloudme.com
 	## https://www.cloudme.com/en/webdav
 
 	*cloudme)
-	DST="https://webdav.cloudme.com"
+	DST="webdav.cloudme.com"
+	COPTS="$COPTS --digest"
 	;;
 	*)
-	DST="https://my.webdav.server"
+	DST="my.webdav.server"
 	;;
     esac
 }
@@ -249,7 +255,7 @@ echo ""
 find -L "$@" -type d | while read d ; do
 echo "[i] $d" >&2
 #echo "url = \"$DST/$DIR$(urlencode "$d")\"" 
-echo "url = \"$(geturl "$DST/$DIR" "$d")\""
+echo "url = \"$(geturl "$DST" "/$DIR/$d")\""
 #echo "--next"
 echo ""
 done
@@ -263,7 +269,7 @@ S="$(stat -L -c%s "$f")"
 echo "[i] $f ($S bytes)" >&2
 echo "upload-file = \"$f\""
 #echo "url = \"$DST/$DIR$(urlencode "$f")\""
-echo "url = \"$(geturl "$DST/$DIR" "$f")\"" 
+echo "url = \"$(geturl "$DST" "/$DIR/$f")\"" 
 done
 }
 
@@ -271,8 +277,25 @@ PID=$$
 
 ## BEGIN
 
+BEGIN=`date +%s`
+
 echo "[i] remote dir: $DIR" >&2
 echo "[i] bin $CURL" >&2
+echo "[i] CURL OPTS $COPTS" >&2
+
+getlist(){
+cat $CNF
+echo ""
+echo "url = \"$DST/$DIR\"" 
+}
+
+[ "$GET" ] && {
+
+getlist | $CURL $COPTS \
+    -i \
+    -X PROPFIND
+exit 0
+}
 
 #[ -d "$F" ] && {
 anydir "$@" && {
@@ -290,12 +313,14 @@ readdir "$@" | $CURL $COPTS \
     case "$L" in
 	*409\ Conflict*)
         echo "\n[E] $L" >&2
-	kill $PID
-	exit 1
+	kill -TERMP $PID
+	sleep 1
+    	exit 1
 	;;
 	*Unauthorized*)
         echo "\n[E] $L" >&2
-	kill $PID
+	kill -TERM $PID
+	sleep 1
 	exit 1
 	;;
     esac
@@ -304,7 +329,6 @@ done
 
 }
 
-echo ""
 anyfiles "$@" && {
 
 echo "[i] UPLOAD FILES" >&2
@@ -319,6 +343,12 @@ readfiles "$@" | $CURL $COPTS \
 #HTTP/1.1 204 No Content
 
 }
+
+END=`date +%s`
+
+DURATION=$((END - BEGIN))
+
+echo "[i] upload duration time: $DURATION s"
 
 # exit 0
 
