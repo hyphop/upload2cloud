@@ -49,7 +49,7 @@ https://github.com/hyphop/upload2cloud
 
 or
     
-    curl -kL https://git.io/vpjn6 > upload2cloud && chmod 0777 upload2cloud
+    curl -kL https://git.io/vpjKe > upload2cloud && chmod 0777 upload2cloud
 
 # REQUIRED
 

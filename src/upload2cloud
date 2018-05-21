@@ -7,7 +7,7 @@ PROG="$(basename "$0")"
 REP="upload2cloud"
 SRC_BASE="https://raw.githubusercontent.com/hyphop/$REP/master/src"
 ## https://git.io/
-SHORT_LINK=https://git.io/vpjn6
+SHORT_LINK=https://git.io/vpjKe
 
 [ "$DIR" ] || DIR=""
 DIR="$DIR/"

@@ -60,7 +60,8 @@ just make symlinks `upload2cloud-YOUR_SERVICE_NAME` to `upload2cloud` as below
 
 # Just another way to install
 
-    curl -kL https://git.io/vpjn6 > upload2cloud
+    curl -kL https://git.io/vpjKe > upload2cloud
+
 
 # Author 
 
