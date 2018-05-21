@@ -5,8 +5,10 @@
 # just run as
 #	./tools/*
 
+P=upload2cloud
+
 case "$PWD" in
-    *upload2cloud)
+    *$P)
     ;;
     *)
     echo "[e] run only as ./tools/*" >&2
@@ -20,15 +22,17 @@ d="dl"
 echo "[i] UPDATE" >&2
 
 for t in			\
-	upload2cloud		\
-	upload2cloud-yandex	\
-	upload2cloud-4shared	\
-	upload2cloud-cloudme	\
-
+	$P		\
+	$P-yandex	\
+	$P-4shared	\
+	$P-cloudme	\
+	$P-box.net	\
+	
 do
 
 echo "[i] update $d / $t" >&2
 #[ -e $d/$t ] || \
+[ "$P" != "$t" ] && \
     ln -f $d/upload2cloud $d/$t
 $d/$t --help > $d/$t.help.md
 

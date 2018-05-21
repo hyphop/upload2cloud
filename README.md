@@ -1,11 +1,12 @@
 <img alt=upload2cloud src="img/up2cloud.png"/> [![Build Status](https://travis-ci.com/hyphop/upload2cloud.svg?branch=master)](https://travis-ci.com/hyphop/upload2cloud)
 
-# upload2cloud - cloud disk uploader.
+# upload2cloud - cloud disk uploader
 
-+ easy way upload files to cloud storages from command line / *nix shell.
++ easy way upload files to cloud storages from command line / *nix shell, without GUI
 + is simple webdav linux console client 
 + universal & suitable for any webdav storage
 + just one file, 4K only
++ ideal for automate usage
 + free opensource
 
 # Checked & Tested Storage Provides
