@@ -15,12 +15,7 @@ DIR="$DIR/"
 EXTRA=" [upload2cloud](https://github.com/hyphop/upload2cloud/) "
 [ "$CURL" ] || CURL="curl"
 
-COPTS="$COPTS -# \
-    -o- \
-    -g -i \
-    -L \
-    -K-
-"
+COPTS="-# -o- -g -i -L -K- $COPTS"
 
 HTTPS="https://"
 
@@ -280,8 +275,9 @@ PID=$$
 BEGIN=`date +%s`
 
 echo "[i] remote dir: $DIR" >&2
-echo "[i] bin $CURL" >&2
-echo "[i] CURL OPTS $COPTS" >&2
+
+[ "$verbose"] && echo "[i] bin $CURL" >&2
+[ "$verbose" ] && echo "[i] CURL OPTS $COPTS" >&2
 
 getlist(){
 cat $CNF
