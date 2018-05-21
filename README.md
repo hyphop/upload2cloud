@@ -37,7 +37,7 @@ just one line get && install
 
 # Custom providers install
 
-just make symlinks to `upload2cloud` as below
+just make symlinks `upload2cloud-YOUR_SERVICE_NAME` to `upload2cloud` as below
 
     ln -s upload2cloud upload2cloud-yandex
     ln -s upload2cloud upload2cloud-4shared
