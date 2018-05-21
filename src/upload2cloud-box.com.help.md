@@ -1,5 +1,5 @@
 
-# upload2cloud-box.com ( based on [upload2cloud](https://github.com/hyphop/upload2cloud/) )
+# upload2cloud-box.com  [upload2cloud](https://github.com/hyphop/upload2cloud/) 
 
 easy way upload files to cloud storage from command line / *nix shell.
 **upload2cloud-box.com** is simple webdav linux console client suitable for any webdav storage
@@ -45,7 +45,7 @@ https://github.com/hyphop/upload2cloud
 
 # INSTALL
 
-    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/upload2cloud-box.com && chmod 0777 upload2cloud-box.com
+    wget https://raw.githubusercontent.com/hyphop/upload2cloud/master/src/upload2cloud-box.com && chmod 0777 upload2cloud-box.com
 
 or
     

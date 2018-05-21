@@ -17,7 +17,7 @@ esac
 
 
 d="."
-d="dl"
+d="src"
 
 echo "[i] UPDATE" >&2
 
