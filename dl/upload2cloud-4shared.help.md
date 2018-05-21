@@ -12,7 +12,7 @@ easy way upload files to cloud storage from command line / *nix shell.
 
 any vars defines as ENV variables
 
-    [ user, password, user_password, DST, CURL, COPTS, DIR, verbose ] upload2cloud-4shared
+    [ user, password, user_password, DST, CURL, COPTS, DIR, verbose, test ] upload2cloud-4shared
 
 default values
 

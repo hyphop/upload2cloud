@@ -15,12 +15,17 @@ EXTRA="( based on [upload2cloud](https://github.com/hyphop/upload2cloud/) )"
 [ "$CURL" ] || CURL="curl"
 
 COPTS="$COPTS -# \
-    $verbose -o- \
+    -o- \
     -g -i \
     -L \
     -K-
 "
 
+HTTPS="https://"
+
+#verbose=1 COPTS="-w @curl-format" OUTPUT="/dev/stdout"
+
+[ "$OUTPUT" ] || OUTPUT="/dev/null" ##  /dev/stdout /dev/stderr
 [ "$DST" ] || {
     case $PROG in
 	## disk.yandex.com
@@ -64,7 +69,7 @@ easy way upload files to cloud storage from command line / *nix shell.
 
 any vars defines as ENV variables
 
-    [ user, password, user_password, DST, CURL, COPTS, DIR, verbose ] $PROG
+    [ user, password, user_password, DST, CURL, COPTS, DIR, verbose, test ] $PROG
 
 default values
 
@@ -210,7 +215,21 @@ userpass(){
 
 urlencode(){
 # url encode
+#https://orrsella.com/2014/10/06/http-request-diagnostics-with-curl/
+
     echo "$(curl -Gso /dev/null -w %{url_effective} --data-urlencode "$1" "" | cut -c 3-)"
+
+}
+
+geturl(){
+    
+    # try TO DO this job without perl ))))
+    p=${1#https://}
+    p=${p#http://}
+    s="$(curl -Gso /dev/null -w %{url_effective} --data-urlencode "$2" "" | cut -c 3-)"
+    echo -n $HTTPS
+    echo "$p$s" | sed -e 's/%2F/\//g' | sed -e 's/\/\+/\//g'
+
 }
 
 
@@ -226,20 +245,25 @@ anyfiles(){
 
 readdir(){
 cat "$CNF"
+echo ""
 find -L "$@" -type d | while read d ; do
 echo "[i] $d" >&2
-echo "url = \"$DST/$DIR$(urlencode "$d")\"" 
+#echo "url = \"$DST/$DIR$(urlencode "$d")\"" 
+echo "url = \"$(geturl "$DST/$DIR" "$d")\""
+#echo "--next"
+echo ""
 done
 }
 
 readfiles(){
 cat "$CNF"
+echo ""
 find -L "$@" -type f | while read f ; do
 S="$(stat -L -c%s "$f")"
 echo "[i] $f ($S bytes)" >&2
-echo "upload-file = \"$f\"
-url = \"$DST/$DIR$(urlencode "$f")\"
-"
+echo "upload-file = \"$f\""
+#echo "url = \"$DST/$DIR$(urlencode "$f")\""
+echo "url = \"$(geturl "$DST/$DIR" "$f")\"" 
 done
 }
 
@@ -254,6 +278,8 @@ echo "[i] bin $CURL" >&2
 anydir "$@" && {
 echo "[i] UPLOAD DIRS" >&2
 
+[ "$test" ] && readdir "$@"
+[ "$test" ] || \
 readdir "$@" | $CURL $COPTS \
     -i \
     -X MKCOL |  while read L ; do
@@ -283,9 +309,14 @@ anyfiles "$@" && {
 
 echo "[i] UPLOAD FILES" >&2
 
+
+[ "$test" ] && readfiles "$@"
+[ "$test" ] || \
 readfiles "$@" | $CURL $COPTS \
     -f \
-    -X PUT >/dev/null
+    -X PUT >$OUTPUT
+
+#HTTP/1.1 204 No Content
 
 }
 
