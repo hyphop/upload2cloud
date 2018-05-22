@@ -1,7 +1,5 @@
-<img alt=upload2cloud src="img/up2cloud.png"/> [![Build Status](https://travis-ci.com/hyphop/upload2cloud.svg?branch=master)](https://travis-ci.com/hyphop/upload2cloud)
 
-# upload2cloud - cloud disk uploader
-
+# upload2cloud - cloud disk uploader  [![Build Status](https://travis-ci.com/hyphop/upload2cloud.svg?branch=master)](https://travis-ci.com/hyphop/upload2cloud) ![upload2cloud](img/up2cloud.png)
 <img align=right width=50% alt=upload2cloud src="img/upload2cloud.png"/>
 
 + easy way upload files to cloud storages from command line / *nix shell, without GUI
