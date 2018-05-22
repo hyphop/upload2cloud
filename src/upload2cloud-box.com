@@ -276,7 +276,7 @@ BEGIN=`date +%s`
 
 echo "[i] remote dir: $DIR" >&2
 
-[ "$verbose"] && echo "[i] bin $CURL" >&2
+[ "$verbose" ] && echo "[i] bin $CURL" >&2
 [ "$verbose" ] && echo "[i] CURL OPTS $COPTS" >&2
 
 getlist(){
@@ -285,10 +285,12 @@ echo ""
 echo "url = \"$DST/$DIR\"" 
 }
 
+## JUST FOR TEST 
 [ "$GET" ] && {
 
 getlist | $CURL $COPTS \
     -i \
+    -H "Depth: 1" \
     -X PROPFIND
 exit 0
 }

@@ -11,12 +11,27 @@
 
 # Checked & Tested Storage Provides
 
-PROVIDER | FREE | SERVER |Checked
---- | --- | --- | ---
-[yandex](https://disk.yandex.com)	| 10 GB	| webdav.yandex.com/ | ok
-[4shared](https://4shared.com)	| 10 GB	| webdav.4shared.com/ | ok
-[Box](https://box.com) | 10 GB	| dav.box.com/dav | ok
-[CloudMe](https://cloudme.com)	| 3 GB	| webdav.cloudme.com/ | dont work
+we check webdav providers from this list  https://www.free-online-backup-services.com/features/webdav 
+
+PROVIDER | FREE | WEBDAV SERVER | Checked | Comments 
+--- | --- | --- | --- | -- |
+[yandex](https://disk.yandex.com)	| 10 GB	| webdav.yandex.com | ok | Best
+[4shared](https://4shared.com)	| 10 GB	| webdav.4shared.com | ok | have Ad 
+[Box](https://box.com) | 10 GB	| dav.box.com/dav | ok | poor web ui
+[CloudMe](https://cloudme.com)	| 3 GB	| webdav.cloudme.com | dont work | have some not standart webdav specifics 
+[DriveOnWeb](https://driveonweb.de)	| 5GB | storage.driveonweb.de/probdav | not tested |
+
+<!--
+DriveHQ*	1 GB	
+IDrive Sync	5 GB	dav.idrivesync.com
+Koofr	2 GB	https://app.koofr.net/dav
+Memopal	3 GB	https://dav.memopal.com/
+PowerFolder Free	5 GB	my.powerfolder.com/webdav
+Safecopy Backup	3 GB	dav.safecopybackup.com
+Storage Made Easy (US)	5 GB	webdav.storagemadeeasy.com
+Storage Made Easy (EU)	5 GB	webdaveu.storagemadeeasy.com
+Strato HiDrive Free	5 GB	https://webdav.hidrive.strato.com
+-->
 
 you can check another storage providers , 
 make some customization and fork [upload2cloud](https://github.com/hyphop/upload2cloud)
